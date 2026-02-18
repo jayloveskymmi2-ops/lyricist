@@ -9,15 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       // Polyfill process.env for browser environments
-      // This prevents "ReferenceError: process is not defined"
       window.process = window.process || {};
       window.process.env = window.process.env || {};
       
-      // IMPORTANT: For GitHub Pages deployment, you must set your API key here.
-      // If you are using a build tool (Vite/Webpack), use .env files instead.
-      // window.process.env.API_KEY = "AIzaSyBcjEHtzl9vEtK0qOstL7P8ipINY0Fk35M"; 
+      // IMPORTANT: Paste your API key inside the quotes below if deploying manually
       if (!window.process.env.API_KEY) {
-         window.process.env.API_KEY = "";
+         window.process.env.API_KEY = "AIzaSyBcjEHtzl9vEtK0qOstL7P8ipINY0Fk35M";
       }
     </script>
     <script type="importmap">
